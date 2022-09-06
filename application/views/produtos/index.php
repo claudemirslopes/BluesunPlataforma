@@ -82,7 +82,7 @@
                             <tr>
                                 <th class="text-center" style="display: none;">#</th>
                                 <th>Descrição</th>
-                                <th>Marca</th>
+                                <th style="display: none;">Marca</th>
                                 <th>Categoria</th>
                                 <th>Preço</th>
                                 <th class="text-center">Est. Mín.</th>
@@ -96,7 +96,7 @@
                             <tr>
                                 <td class="text-center" style="display: none;"><?php echo $produto->produto_id; ?></td>
                                 <td><?php echo $produto->produto_descricao; ?></td>
-                                <td>
+                                <td style="display: none;">
                                     <?php
                                         if ($produto->produto_marca_id == 0) {
                                             echo '---';
